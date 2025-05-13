@@ -1,0 +1,47 @@
+{
+  "expo": {
+    "name": "mactest",
+    "slug": "mactest",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "mactest",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+  "supportsTablet": true,
+  "bundleIdentifier": "com.tuempresa.mactest",
+  "infoPlist": {
+    "NSBluetoothAlwaysUsageDescription": "Esta app necesita acceso a Bluetooth para escanear y conectarse a dispositivos BLE.",
+    "NSBluetoothPeripheralUsageDescription": "Esta app necesita acceso a Bluetooth para conectarse a dispositivos BLE."
+  }
+},
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
